@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>index (2)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>index (3)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7518,8 +7518,8 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="NeuroFlinkCEP:-Neurosymbolic-Complex-Event-Recognition-Optimized-across-IoT-Platforms"><h1 style="text-align: center;"><img alt="Logo" class="t0" src="images/logo.svg" width="100"/>
-NeuroFlinkCEP: Neurosymbolic Complex Event Recognition Optimized across IoT Platforms</h1><a class="anchor-link" href="#NeuroFlinkCEP:-Neurosymbolic-Complex-Event-Recognition-Optimized-across-IoT-Platforms">¶</a></h1><hr/>
+<h1><h1 style="text-align: center;"><img alt="Logo" class="t0" src="images/logo.svg" width="100"/> NeuroFlinkCEP: Neurosymbolic Complex Event Recognition Optimized across IoT Platforms</h1></h1>
+<hr/>
 </div>
 </div>
 </div>
@@ -7541,6 +7541,61 @@ NeuroFlinkCEP: Neurosymbolic Complex Event Recognition Optimized across IoT Plat
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We demonstrate NeuroFlinkCEP, the first framework that integrates neural and symbolic Complex Event Recognition (CER) over a state-of-the-art Big Data platform, also optimizing neurosymbolic CER upon operating over IoT settings NeuroFlinkCEP receives expressed patterns as extended regular expressions and automatically transforms them to FlinkCEP jobs per device. To enable detection of simple events involved in CER patterns, NeuroFlinkCEP can
+integrate any neural model in FlinkCEP jobs. To optimally assign operator execution in-network, we incorporate and extend a state of-the-art IoT optimizer.</p>
+<p><p2>NeuroFlinkCEP is integrated into RapidMiner Studio,a no-code data science platform, so users can visually design end-to-end streaming workflows with simple drag and drop operators. With NeuroFlinkCEP and IoT optimizer available directly in RapidMiner Studio, creating, testing, and deploying complex event-recognition pipelines optimaly in multi devices is more intuitive.</p2></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Architecture">Architecture<a class="anchor-link" href="#Architecture">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><b>NeuroFlinkCEP</b> has two key architectural components:<p>
+<ul>
+<li>
+        RegEx2-NeuroFlinkCEP operator. Transforms a regular-expression pattern description into the corresponding FlinkCEP code
+  </li>
+<li>
+        SynapSEflow operator. Processes raw input data through a loaded, trained neural model to produce predicted values as simple events
+  </li>
+<li>
+        DAG*4CER Optimizer. Accepts the logical streaming workflow and the available IoT devices, then computes the optimal execution plan using the state-of-the-art DAG* IoT optimization algorithm
+  </li>
+</ul>
+<p>The following figure illustrates the step-by-step process for NeuroFlinkCEP’s workflow design, IoT optimization, and distributed execution.</p>
+<div>
+<object data="images/NeuroFlinkCEPBigPicture.pdf" height="250" type="application/pdf" width="200">
+</object>
+</div>
+</p></p></div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -7580,13 +7635,13 @@ NeuroFlinkCEP: Neurosymbolic Complex Event Recognition Optimized across IoT Plat
 <td class="tg-0pky">
 <div class="large-2 large-push-2 columns" style="text-align:center;">
 <a href="#">
-<img alt="Paper" class="t0" src="eu_logo_s.png" width="100"/>
+<img alt="Paper" class="t0" src="images\eu_logo_s.png" width="100"/>
 </a>
 </div>
 <td class="tg-0pky">
 <div class="large-2 large-push-2 columns" style="text-align:center;">
 <a href="https://evenflow-project.eu/">
-<img alt="No description has been provided for this image" class="t0" src="evenflow_logo.png" width="250"/>
+<img alt="No description has been provided for this image" class="t0" src="images\evenflow_logo.png" width="250"/>
 <div style="text-align:center; margin: 0 0 0 0; font-size: 0.8em;">EVENFLOW</div>
 </a>
 </div>
